@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mauve Fox Travel</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-content">
+        <header>
+            <h1><strong>Mauve Fox Travel</strong></h1>
+            <h1> Pembelian Tiket</h1>
+        </header>
+        <section>
+            <div class="wrapper">
+            <h1>Input Form</h1>
+            <form id="form">
+                <div class="input-box">
+                <i class='bx bxs-user'></i>
+                <input type="text" name="text" placeholder="Nama" />
+                </div>
+                <div class="input-box">
+                <i class='bx bxs-home'></i>
+                <input type="text" name="text" placeholder="Alamat"/>
+                </div>
+                <div class="input-box">
+                <i class='bx bxs-phone' ></i>
+                <input type="number" name="text" placeholder="No. HP"/>
+                </div>
+                <div class="input-box">
+                <i class='bx bxs-envelope' ></i>
+                <input type="email" name="text" placeholder="E-mail"/>
+                </div>
+                <div class="input-box">
+                <i class='bx bxs-map-pin' ></i>
+                <input type="text" name="text" placeholder="Destinasi"/>
+                </div>
+                <button id="submit-button">Submit</button>
+            </form>
+            </div>
+        </section>
+
+        <section>
+            <table class="table-input">
+                <thead bgcolor="black">
+                    <tr bgcolor="grey">
+                        <th>Nama</th>
+                        <th>Alamat</th>
+                        <th>No. HP</th>
+                        <th>E-mail</th>
+                        <th>Destinasi</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                <tbody id="items">
+                    <!-- akan diisi hasil input -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+  </body>
+  <script src="/server/script.js"></script>
+</html>
